@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>earth</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .p{
+            font-size: 120px;
+            color: blue;
+            margin-left: 550px;
+            margin-top: 570px;
+
+        }
+        .heading{
+            width: 10%;
+            height: 10%;
+            border-radius: 50%;
+            background: url('moon.png') no-repeat;
+            background-size: cover;
+        }
+        
+    
+        .earth-container {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: rotateEarth 10s linear infinite;
+        }
+        .earth {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: url('earth2.png') no-repeat;
+            background-size: cover;
+        }
+        @keyframes rotateEarth {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="p">EARTH</h1>
+<main>
+    <a href="https://en.wikipedia.org/wiki/Earth" target="_main">
+    <div class="earth-container">
+      <div class="heading">
+      </div>
+        <div class="earth"></div>
+    </div>
+</a>
+</main>
+</body>
+</html>
